@@ -1,11 +1,13 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: RAMAN_BACHKAROU
+  name: new
 spec:
   replicas: 10
   template:
     metadata:
+      labels:
+        app: app1
     spec:
       containers:
       - name: app1
