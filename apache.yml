@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: app-default
+  name: raman1
 spec:
   replicas: 1
   template:
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-default-svc
+  name: ramanservice
   labels:
     app: app-default
 spec:
